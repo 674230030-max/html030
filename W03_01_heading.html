@@ -38,6 +38,26 @@
             padding-left: 10px;
             color: rgb(161, 161, 161);
         }
+        .note::before{
+            content: "👍";
+        }
+        .back-link{
+            color: blue;
+            text-decoration: none;
+            background-color: #595c83;
+            display:inline-block
+            text-align: center;
+            padding: 10px 24px;
+            border-radius: 15px;
+            box: shadow 0 4px 12px rgh(201, 82, 231);
+        }
+         .back-link:hover{
+            color: rgb(247, 0, 255);
+            background-color: #ffbb00;
+            /*text-decoration: underline; */
+        }
+
+    
     </style>
 </head>
 <body>
@@ -88,7 +108,7 @@
             </ul>
             <p class="note">📍H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
         </section>
-        <a href="index.html">&larr; Back to HTML Tutorial</a>
+        <a href="index.html" class="back-link">&larr; Back to HTML Tutorial</a>
     </div>
 </body>
 </html>
