@@ -1,6 +1,6 @@
 /* Global CSS Styles*/
-
-* {
+<style>
+           /* Global CSS Styles */ {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,46 +9,75 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: rgb(255, 236, 130);
+  background-color: rgb(233, 235, 167);
+
+  background-image: url(https://pbs.twimg.com/media/Dl8ezahUYAAoWe7.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
 }
 
-/* Centainer Styles */
+/* Container Styles / */
 .container {
-  background-color: rgb(214, 170, 255);
   max-width: 1200px;
   margin: 200px auto 40px;
 }
-/* Shaer CSS */
-.code {
-  background-color: rosybrown;
+
+/* Share CSS / */
+code {
+  background-color: #fab2c4;
   border-radius: 4px;
   padding: 2px 4px;
 }
-.pre {
+
+pre {
+  background-color: #fcc3e2;
+  border-left: (9, 215, 252) 5px solid;
+  padding: 10px;
+
+  white-space: per-wrap;
+  word-wrap: break-word;
+  border-left: #ecc061 5px solid;
 }
+
 .badge {
   color: rgb(255, 255, 255);
   border-radius: 4px;
-  padding: 0;
-  background-color: rgb(170, 170, 170);
+  padding: 2px 6px;
+  background-color: #83c7ff;
+  font-size: 10px;
+  font-weight: bold;
+
+  vertical-align: middle;
 }
+
 .card {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 25px 30px;
   border-radius: 12px;
   margin-bottom: 25px;
   border-top: 10px;
 }
-.note {
+
+.noet {
 }
-/* Group1: Header Styles */
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* / Group1 Head Styles / */
 header {
   background-color: rgb(255, 255, 255);
   padding: 20px;
-  box-shadow: 2px 5px 10px rgb(235, 219, 219);
+  box-shadow: 2px 5px 10px rgb(69, 69, 69);
 
   display: flex;
   flex-direction: column;
@@ -58,25 +87,137 @@ header {
   top: 0;
   width: 100%;
 }
-.list-menu {
+
+.list-mamu {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.list-menu li {
-  background-color: rgb(255, 161, 227);
-  padding: 10px 15px;
-  border-radius: 50%;
+
+.list-mamu li {
+  margin-top: 15px;
+  transition: transform 2s ease;
 }
-.list-menu li a {
+.list-mamu li:hover {
+  transform: translateY(-35px);
+}
+
+.list-mamu li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: bolder;
+  color: aliceblue;
+  font-weight: bold;
+  background: linear-gradient(135deg, pink, rgb(195, 143, 238));
+  box-shadow: 0 4px 15px rgb(109, 109, 109);
+  padding: 8px 6px;
+  border-radius: 8px;
 }
-.list-menu li:hover {
-  background-color: rgb(255, 173, 65);
+.list-mamu a:hover {
+  background: linear-gradient(135deg, rgb(152, 74, 226), rgb(228, 128, 166));
 }
+
 h1 {
-  color: rgb(243, 8, 67);
-  margin: ;
+  color: #f15287;
+  margin:;
+}
+
+p {
+}
+/* / Group2 / */
+.img-small {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+.position.left {
+  justify-content: left;
+}
+.position.center {
+  justify-content: center;
+}
+.position.right {
+  justify-content: right;
+}
+.position {
+  display: flex;
+  align-items: center;
+  border: 5px dashed rgb(180, 224, 235);
+  padding: 5.5px;
+  margin: 3px;
+  border-radius: 25px;
+}
+/* / Group3 / */
+.img-fixed {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  margin: 15px;
+}
+/* / Group4 / */
+.opj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+.obj-fit-image.contain {
+  object-fit: fill;
+}
+.obj-fit-image.contain {
+  object-fit: cover;
+}
+/* / Group5 / */
+.img-youtube img {
+  width: 260px;
+  border-radius: 12px;
+  max-width: 20px 0;
+
+  transition: 0.3s;
+}
+.img-youtube img:hover {
+  /* transform:rotate: 180deg; */
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px;
+}
+/* / Group6 / */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+/* / Group7 / */
+.figure {
+  margin: 0 auto;
+  text-align: center;
+}
+/* / Group8 / */
+figure {
+  text-align: center;
+}
+/* / Group9 / */
+.bg-image {
+  background-image: url("Liverpool_FC_Logo.svg.png");
+}
+/* / Group10 / */
+.back-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(243, 101, 155);
+  display: block;
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(203, 61, 231);
+}
+.back-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(244, 174, 247);
+  /* text-decoration : unferline */
 }
