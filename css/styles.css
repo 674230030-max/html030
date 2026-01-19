@@ -1,0 +1,82 @@
+/* Global CSS Styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(255, 236, 130);
+}
+
+html {
+}
+
+/* Centainer Styles */
+.container {
+  background-color: rgb(214, 170, 255);
+  max-width: 1200px;
+  margin: 200px auto 40px;
+}
+/* Shaer CSS */
+.code {
+  background-color: rosybrown;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+.pre {
+}
+.badge {
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 0;
+  background-color: rgb(170, 170, 170);
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-top: 10px;
+}
+.note {
+}
+/* Group1: Header Styles */
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 2px 5px 10px rgb(235, 219, 219);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.list-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.list-menu li {
+  background-color: rgb(255, 161, 227);
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.list-menu li:hover {
+  background-color: rgb(255, 173, 65);
+}
+h1 {
+  color: rgb(243, 8, 67);
+  margin: ;
+}
